@@ -1,8 +1,10 @@
 import React, { memo, useCallback, useRef, MouseEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { message } from 'antd';
+import cn from 'clsx';
 import { ChangeLanguageOriginButton } from './ChangeLanguageOriginButton';
 import { useMovement } from '../../hooks/useMovement';
+import s from './ChangeLanguageButton.sass';
 
 export type Props = {
   className?: string;
@@ -52,7 +54,7 @@ export const ChangeLanguageButton = memo<Props>(({ className }) => {
       onTouchStart={onTouchStart}
       onMouseDown={onMouseDownHandler}
       onClick={onClick}
-      className={className}
+      className={cn(s.root, className)}
     />
   );
 });

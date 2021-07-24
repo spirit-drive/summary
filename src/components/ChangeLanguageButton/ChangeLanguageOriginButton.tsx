@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { message } from 'antd';
 import { RuIcon } from './RuIcon';
 import { UsaIcon } from './UsaIcon';
-import s from './ChangeLanguageButton.sass';
+import s from './ChangeLanguageOriginButton.sass';
 
 export type Props = React.HTMLAttributes<HTMLButtonElement>;
 
