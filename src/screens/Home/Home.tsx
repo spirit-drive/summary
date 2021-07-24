@@ -1,30 +1,23 @@
-import React, { memo, useCallback } from 'react';
+import React, { memo, Suspense, lazy } from 'react';
 import cn from 'clsx';
-import { useTranslation } from 'react-i18next';
+import { MySkillsSkeleton } from '../../components/MySkills';
 import s from './Home.sass';
+
+const MySkills = lazy(() => import('../../components/MySkills'));
 
 export type Props = {
   className?: string;
   children?: never;
 };
 
-export const Home = memo<Props>(({ className }) => {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = useCallback(
-    (language: string): void => {
-      i18n.changeLanguage(language);
-    },
-    [i18n]
-  );
-  return (
-    <div className={cn(s.root, className)}>
-      {t('test')}
-      <button type="button" onClick={(): void => changeLanguage('en')}>
-        en
-      </button>
-      <button type="button" onClick={(): void => changeLanguage('ru')}>
-        ru
-      </button>
-    </div>
-  );
-});
+const mySkillsFallback = <MySkillsSkeleton />;
+
+const Home = memo<Props>(({ className }) => (
+  <div className={cn(s.root, className)}>
+    <Suspense fallback={mySkillsFallback}>
+      <MySkills />
+    </Suspense>
+  </div>
+));
+
+export default Home;
