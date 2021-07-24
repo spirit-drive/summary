@@ -10,9 +10,5 @@ export type Props = {
 
 export const Title = memo<Props>(({ className }) => {
   const { t } = useTranslation();
-  return (
-    <h2 className={cn(s.root, className)}>
-      <h2>{t('mySkills.title')}</h2>
-    </h2>
-  );
+  return <h2 className={cn(s.root, className)}>{t('mySkills.title')}</h2>;
 });
