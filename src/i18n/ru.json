@@ -1,3 +1,8 @@
 {
-  "test": "RRR"
+  "test": "RRR",
+  "me": {
+    "firstName": "Игорь",
+    "lastName": "Звягин",
+    "profession": "Middle-to-Senior Frontend Developer"
+  }
 }
