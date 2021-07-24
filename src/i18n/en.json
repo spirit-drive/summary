@@ -4,5 +4,8 @@
     "firstName": "Igor",
     "lastName": "Zvyagin",
     "profession": "Middle-to-Senior Frontend Developer"
+  },
+  "errors": {
+    "unexpectedError": "Неожиданная ошибка"
   }
 }
