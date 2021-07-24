@@ -13,10 +13,10 @@ export const MeTitle = memo<Props>(({ className }) => {
 
   return (
     <div className={cn(s.root, className)}>
-      <div className={s.name}>
+      <h1 className={s.name}>
         <div className={s.firstName}>{t('me.firstName')}</div>
         <div>{t('me.lastName')}</div>
-      </div>
+      </h1>
       <div className={s.profession}>{t('me.profession')}</div>
     </div>
   );

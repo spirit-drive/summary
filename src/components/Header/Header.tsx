@@ -10,8 +10,8 @@ export type Props = {
 };
 
 export const Header = memo<Props>(({ className }) => (
-  <div className={cn(s.root, className)}>
+  <header className={cn(s.root, className)}>
     <Avatar />
     <MeTitle className={s.title} />
-  </div>
+  </header>
 ));
