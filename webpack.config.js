@@ -2,7 +2,7 @@
 const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const { ContextReplacementPlugin } = require('webpack');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -69,7 +69,7 @@ module.exports = (_, options) => {
     },
     plugins: [
       new ContextReplacementPlugin(/moment[/\\]locale$/, /ru|en/),
-      new BundleAnalyzerPlugin(),
+      // new BundleAnalyzerPlugin(),
       new CleanWebpackPlugin(),
       new HtmlPlugin({
         template: 'index.html',
