@@ -9,6 +9,82 @@
     "unexpectedError": "Неожиданная ошибка"
   },
   "mySkills": {
-    "title": "My Skills"
+    "title": "My Skills",
+    "js": {
+      "title": "JavaScript ES6+",
+      "desc": ""
+    },
+    "ts": {
+      "title": "TypeScript",
+      "desc": ""
+    },
+    "react": {
+      "title": "React 17+",
+      "desc": ""
+    },
+    "stateManagers": {
+      "title": "Redux, Redux-saga, Unistore, Reatom",
+      "desc": ""
+    },
+    "reactNative": {
+      "title": "React Native 0.60+",
+      "desc": ""
+    },
+    "routing": {
+      "title": "React-router",
+      "desc": ""
+    },
+    "dnd": {
+      "title": "React-dnd, React-beautiful-dnd",
+      "desc": ""
+    },
+    "webCommunication": {
+      "title": "GraphQl + Apollo, WebSockets",
+      "desc": ""
+    },
+    "builders": {
+      "title": "Webpack, Gulp",
+      "desc": ""
+    },
+    "htmlCss": {
+      "title": "HTML5, CSS4, Pug, Sass, Styles",
+      "desc": ""
+    },
+    "testing": {
+      "title": "Unit testing, End-to-end testing, Jest, Cypress",
+      "desc": ""
+    },
+    "git": {
+      "title": "Git, GitLab",
+      "desc": ""
+    },
+    "db": {
+      "title": "MongoDB",
+      "desc": ""
+    },
+    "node": {
+      "title": "Node.js + Express.js",
+      "desc": ""
+    },
+    "electron": {
+      "title": "Electron.js",
+      "desc": ""
+    },
+    "tensorflow": {
+      "title": "Tensorflow.js",
+      "desc": ""
+    },
+    "design": {
+      "title": "Figma, Adobe XD, Adobe Photoshop",
+      "desc": ""
+    },
+    "principles": {
+      "title": "SOLID, KISS, DRY",
+      "desc": ""
+    },
+    "methods": {
+      "title": "TDD & DDD",
+      "desc": ""
+    }
   }
 }
