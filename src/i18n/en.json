@@ -89,5 +89,10 @@
   },
   "myExperience": {
     "title": "My experience"
+  },
+  "opening": {
+    "main": "Welcome to the page of my summary. While it is as simple and empty as possible, MVP so to speak. As the desire arises, I will fill it with its contents.",
+    "hh": "Summary in hh",
+    "github": "Here you can view the source code of this application"
   }
 }

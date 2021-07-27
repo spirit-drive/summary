@@ -15,13 +15,11 @@ export const useAction = ({ start, end }: { start: () => void; end: () => void }
       new Promise((resolve) => {
         start();
         setTimeout(() => {
-          requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-              if (mounted.current) {
-                end();
-                resolve(undefined);
-              }
-            });
+          setTimeout(() => {
+            if (mounted.current) {
+              end();
+              resolve(undefined);
+            }
           });
         }, duration);
       }),
